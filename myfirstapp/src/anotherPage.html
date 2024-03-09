@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <style>
+        /* CSS for formatting */
+        .details {
+            margin: 20px;
+        }
+
+        .details img {
+            max-width: 300px;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Button to go back to the previous page -->
+    <div class="navbar">
+        <h1>Movie Details</h1>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <!-- Container to display movie details -->
+    <div class="details" id="movieDetails">
+        <!-- Movie details will be displayed here -->
+    </div>
+
+    <button onclick="goToCommentPage()">Go to Comment Page</button>
+
+</body>
+</html>
+
+<script src="anotherPage.js"></script>
